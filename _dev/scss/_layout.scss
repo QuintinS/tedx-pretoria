@@ -1,0 +1,263 @@
+
+header,
+.content section,
+footer {
+
+	@extend .column-container;
+
+	> article,
+	.container {
+		width: 100%;
+		padding: 50px 0;
+		margin: auto;
+		position:relative;
+	}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: $media-breakpoint-3 - 1) {
+
+	.content section {
+		padding: 20px;
+		&.banner {
+			padding: 0;
+		}
+	}
+
+}
+
+header,
+footer {
+
+	article,
+	.container {
+		padding: 0;
+	}
+
+}
+
+header {
+
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	position:fixed;
+	background: #fff;
+	width: 100%;
+	z-index: 100;
+
+	border-top: 3px solid $template-color-1;
+
+	padding:0;
+
+	#header-logo-link {
+		display:inline-block;
+		padding-top: 10px;
+		width: 350px;
+		img {
+			width: 100%;
+		}
+	}
+
+}
+
+body > footer {
+	background: #222 url(../images/footer-background-pattern.png);
+	color: #999;
+	strong {
+		color: #fff;
+	}
+}
+
+.content section {
+
+	article {
+		@include clearfix();
+
+		footer {
+			margin-top: 2em;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+}
+
+.content {
+	padding-top: 200px;
+	background: $template-color-1;
+}
+
+
+.column-container {
+
+	@include container();
+	@include clearfix();
+
+}
+
+body {
+	
+}
+
+
+body > .content {
+	padding-top: 100px;
+}
+
+
+@media only screen and (min-width: $media-breakpoint-2) and (max-width: $media-breakpoint-3 - 1) {
+
+	#header-logo-link {
+		width: 250px !important;
+	}
+
+}
+
+@media only screen and (max-width: $media-breakpoint-3 - 1) {
+
+	#header-logo-link {
+		width: 250px !important;
+	}
+
+}
+
+
+@media only screen and (max-width: $media-breakpoint-3 - 1) {
+
+	
+
+
+	header > .container {
+		// text-align: center;
+	}
+	
+}
+
+@media only screen and (min-width: $media-breakpoint-3) {
+
+	body > .content {
+		padding-top: 130px;
+	}
+
+	body {
+		> header,
+		> footer,
+		> .content section {
+			article,
+			.container {
+				width: $media-breakpoint-3 - 50;
+			}
+		}
+	}
+
+}
+
+
+
+@media only screen and (min-width: $media-breakpoint-3) and (max-width: $media-breakpoint-4 - 1) {
+
+
+
+}
+
+@media only screen and (max-width: $media-breakpoint-4) {
+
+	
+
+}
+
+@media only screen and (min-width: $media-breakpoint-4) {
+
+	body > .content {
+		padding-top: 200px !important;
+	}
+
+	body {
+
+		> header,
+		> footer,
+		> .content section {
+			article,
+			.container {
+				width: $media-breakpoint-4 - 50;
+			}
+		}
+		
+	}
+
+	.columns-1 {
+		@include span (12 of 12 last);
+	}
+
+	.columns-2 {
+		@include span (6 of 12);
+		&:last-of-type {
+			@include span (6 of 12 last);
+		}
+		&:only-child {
+			@include span (6 of 12);
+		}
+	}
+
+	.columns-3 {
+		@include span (4 of 12);			
+		&:last-of-type {
+			@include span (4 of 12 last);
+		}
+		&:only-child {
+			@include span (4 of 12);
+		}
+	}
+
+	.columns-4 {
+		@include span (3 of 12);			
+		&:last-of-type {
+			@include span (3 of 12 last);
+		}
+		&:only-child {
+			@include span (3 of 12);
+		}
+	}
+
+	.columns-6 {
+		@include span (2 of 12);			
+		&:last-of-type {
+			@include span (2 of 12 last);
+		}
+		&:only-child {
+			@include span (2 of 12);
+		}
+	}
+
+}
+
+@media only screen and (min-width: $media-breakpoint-4) and (max-width: $media-breakpoint-5 - 1) {
+
+
+
+}
+
+@media only screen and (min-width: $media-breakpoint-5) {
+
+	body {
+
+		> header,
+		> footer,
+		> .content section {
+			article,
+			.container {
+				width: $media-breakpoint-5 - 100;
+			}
+		}
+		
+	}
+
+}
+
+
+
+

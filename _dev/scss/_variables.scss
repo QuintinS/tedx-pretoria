@@ -1,0 +1,59 @@
+/* Basic Colours */ 
+
+$color-om-blue-1: #407be4;
+$color-om-blue-2: #4e9eff;
+$color-om-blue-3: #66ddff;
+$color-om-pink-1: #dc3675;
+$color-om-pink-2: #ff4cb1;
+$color-om-pink-3: #ff87ff;
+$color-om-green-1: #2ea26d;
+$color-om-green-2: #35c691;
+$color-om-green-3: #42ffcd;
+
+
+
+$color-darkred: #f7df53;
+$color-pink: #f38cb9;
+$color-blue: #0f6a94;
+$color-green: #6c9d4b;
+$color-seagreen: #116f50;
+$color-lightgreen: #9abf3d;
+$color-orange: #f77a20;
+$color-yellow: #f7df53;
+$color-darkgrey: #333;
+$color-midgrey: #666;
+$color-lightgrey: #999;
+$color-offwhite: #e6e6e6;
+$color-red: #ec0b14;
+
+$template-color-1: #e51b23;
+$template-color-2: #222222;
+$template-color-3: #1d1d1d;
+
+/* Basic Style Colours */
+
+$color-background: #222;
+
+$color-body: $color-darkgrey;
+$color-headings-1: $template-color-1;
+$color-headings-2: #fff;
+$color-link: $template-color-1;
+$color-label: $color-link;
+
+$color-default: $color-offwhite;
+$color-primary: $template-color-1;
+$color-success: $color-om-green-2;
+$color-warning: $color-orange;
+$color-danger: $color-red;
+$color-info: $color-blue;
+
+$color-input-border: $color-default;
+
+$fonts-headings-1: "Lato", "Open Sans", Helvetica, Arial, sans-serif;
+$fonts-body: "Lato", Helvetica, Arial, sans-serif;
+
+// $media-breakpoint-1: 450px;
+$media-breakpoint-2: 450px;
+$media-breakpoint-3: 600px;
+$media-breakpoint-4: 1060px;
+$media-breakpoint-5: 1400px;

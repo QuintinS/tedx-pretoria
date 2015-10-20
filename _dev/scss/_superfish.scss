@@ -1,0 +1,46 @@
+.sf-menu {
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #e6e6e6
+}
+
+.sf-menu li a {
+	float:left;
+	padding: 20px;
+	color: #999;
+	font-weight: bold;
+}
+
+.sf-menu li a:hover {
+	color: red;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.sf-menu li a.current {
+	color: red;
+}
+
+
+
+@media only screen and (max-width: $media-breakpoint-4 - 1) {
+
+	.sf-menu {
+	display:none;
+	}
+
+	.sf-menu li {
+	display:block;
+	}
+
+	.sf-menu li a {
+	display:block;
+	width:100%;
+	background: #f2f2f2;
+	margin: 3px 0;
+	}
+
+	.sf-menu li a:hover {
+	background: #fff
+	}
+
+}

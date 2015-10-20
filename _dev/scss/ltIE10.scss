@@ -1,0 +1,21 @@
+label.hidden {
+	display: block !important;
+}
+
+#page-login {
+	.background {
+		img {
+			filter: alpha(opacity=10);
+		}
+	}
+}
+
+.hasfixedbar .content-fixedbar {
+	margin-left: 250px !important;
+}
+
+.background {
+	&:after {
+		content:none;
+	}
+}

@@ -1,0 +1,130 @@
+@mixin labelStyle() {
+
+	color: $color-om-blue-1;
+	font-weight:bold;
+	margin-bottom: 5px;
+	// margin-top:1em;
+	display:inline-block;
+
+}
+
+
+@mixin inputStyle() {
+
+	@include transition-duration(0.25s);
+	@include transition-property(box-shadow, background, color, border);
+
+	padding: 15px;
+	border: 1px solid #ddd;
+
+	@include box-shadow(0 0 5px rgba(0,0,0,.1) inset);
+	// @include border-radius(2px);
+
+	&:focus {
+		border-color: $color-om-blue-1;
+	}
+
+	&:hover {
+		border-color: $color-om-blue-1;
+	}
+
+	&:active {
+		border-color: $color-om-blue-1;
+	}
+
+}
+
+@mixin buttonStyle($myColor) {
+
+	display:inline-block;
+
+	padding:15px;
+	
+	margin:.25em;
+
+	font-weight:bold;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+
+	color: #fff;
+	text-decoration: none;
+
+	background: $myColor;
+
+	@include transition-duration(0.5s);
+	@include transition-property(background, color);
+
+	border: 2px solid $myColor;
+	
+	cursor: pointer;
+
+	&:active,
+	&.active,
+	&:focus,
+	&.focus,
+	&:hover,
+	&.hover {
+		background: darken($myColor, 15%);
+		border-color: darken($myColor, 15%);
+		color: #fff;
+		text-decoration: none;
+	}
+
+	&.active,
+	&:active { 
+
+	}
+
+	&.focus,
+	&:focus { 
+		background: darken($myColor, 30%);
+		border-color: darken($myColor, 30%);
+	}
+
+	&.hollow {
+		background: #fff;
+		color: $myColor;
+		border: 2px solid $myColor;
+		&:hover {
+			color: #fff;
+			background: $myColor;
+		}
+	}
+
+	&.button-small {
+		padding: 10px;
+		font-size: 0.9em;
+		&:active {
+			padding-top:11px;
+			margin-top:1px;
+			margin-bottom:-2px;
+		}
+	}
+
+	&.button-tiny {
+		padding: 5px;
+		font-size: 0.8em;
+		&:active {
+			padding-top:6px;
+			margin-top:1px;
+			margin-bottom:-2px;
+		}
+	}
+
+	&.button-large {
+		padding: 15px;
+		font-size: 1.1em;
+	}
+
+	a & {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+}
