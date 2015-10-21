@@ -758,7 +758,7 @@
 
 						<div class="content-box">
 
-							<form id="contact-form" action="../../../../content/includes/docontact.asp">
+							<form id="contact-form" action="/scripts/contact.asp">
 								
 								<div class="input-group">
 									<label for="contactName">Name</label>
@@ -782,8 +782,8 @@
 								</div>
 
 								<div class="input-group">
-									<label for="contactEmail">Message</label>
-									<textarea rows="10" name="contactEmail" id="contactEmail" placeholder="Enter your message here."></textarea>
+									<label for="contactMessage">Message</label>
+									<textarea rows="10" name="contactMessage" id="contactMessage" placeholder="Enter your message here."></textarea>
 									<span class="validation-message error">The message is too short.</span>
 									<span class="validation-message empty">This field is required.</span>
 								</div>
@@ -839,10 +839,6 @@
 				</footer>
 
 			</div>
-
-		</section>
-
-		<section class="white parallax">
 
 			<article class="article-box">
 
@@ -963,9 +959,11 @@
 	</footer>
 
 	<script src="js/scrollmagic.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<!-- <script src="js/forms.js"></script> -->
 	<script src="js/template.js"></script>
-	<script src="js/forms.js"></script>
 	<script src="js/tedxpretoria.js"></script>
+	
 
 </body>
 </html>

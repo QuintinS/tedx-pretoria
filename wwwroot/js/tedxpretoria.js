@@ -15,6 +15,78 @@ var TEDx = {
 
 	},
 
+	Forms: {
+		Contact: {
+			validate: function(){
+
+				$("#contact-form").validate({
+					rules: {
+						contactName: {
+							required: true,
+						},
+						contactEmail: {
+							required: true,
+							email: true
+						},
+						contactTelephone: {
+							required: true,
+						},
+						contactMessage: {
+							required: true,
+						},
+					},
+					messages: {
+						contactName: {
+							required: "Please enter your name",
+						},
+						contactEmail: {
+							required: "Please enter your e-mail address.",
+							email: "Please enter a valid e-mail address."
+						},
+						contactTelephone: {
+							required: "Please enter your telephone number.",
+						},
+						contactMessage: {
+							required: "Please enter your message.",
+						},
+					},
+					submitHandler: function(form){
+
+						var myData = {
+							contactName: $("#contactName").val(),
+							contactEmail: $("#contactEmail").val(),
+							contactTelephone: $("#contactTelephone").val(),
+							contactMessage: $("#contactMessage").val()
+						};
+
+						$.ajax({
+							// url: "/json/generic-success.json",
+							url: "/scripts/Contact.asp",
+							method: "POST",
+							data: myData,
+							success: function(data){
+								if (data.ResponseStatus === "success") {
+									$("#contact-form .success").fadeIn(500, function(){
+										$(this).delay(5000).fadeOut(500);
+									});
+								}
+								else
+								{
+									console.log("Could not send e-mail.");
+								}
+							},
+							error: function(){
+								console.log("Could not send e-mail.");
+							}
+						});
+
+					}
+				});
+
+			}
+		}
+	},
+
 	ScrollMagic: {
 		controller: new ScrollMagic.Controller(),
 		init: function(){
@@ -75,6 +147,7 @@ var TEDx = {
 
 	reset: function(){
 		TEDx.assignEventListeners();
+		TEDx.Forms.Contact.validate();
 		TEDx.functions.getLinkScroll();
 	}
 
