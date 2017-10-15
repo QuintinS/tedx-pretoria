@@ -88,7 +88,7 @@
 		a:hover{
 			color: red
 		}
-		
+
 	}
 
 }
@@ -146,7 +146,7 @@
 }
 
 /*	----------------------------------
-	
+
 	---------------------------------- */
 
 .footer-header img {
@@ -186,7 +186,7 @@
 	}
 
 	.article-box {
-		
+
 		::selection {
 			color: $color-primary;
 			background-color: rgba($color-primary, .2);
@@ -195,13 +195,13 @@
 		color: #222;
 
 		p {
-			color: $color-body;			
+			color: $color-body;
 		}
 
 		h1, h2, h3, h4, h5, h6, a {
 			color: $color-primary;
 		}
-	
+
 		ol li, ul li {
 			color: $color-primary;
 		}
@@ -392,28 +392,28 @@ label {
 			color: $color-success;
 			&:focus,
 			&:hover {
-				color: lighten($color-success, 20%) !important; 
+				color: lighten($color-success, 20%) !important;
 			}
 		}
 		&.warning {
 			color: $color-warning;
 			&:focus,
 			&:hover {
-				color: lighten($color-warning, 20%) !important; 
+				color: lighten($color-warning, 20%) !important;
 			}
 		}
 		&.danger {
 			color: $color-danger;
 			&:focus,
 			&:hover {
-				color: lighten($color-danger, 20%) !important; 
+				color: lighten($color-danger, 20%) !important;
 			}
 		}
 		&.info {
 			color: $color-info;
 			&:focus,
 			&:hover {
-				color: lighten($color-info, 20%) !important; 
+				color: lighten($color-info, 20%) !important;
 			}
 		}
 
@@ -433,16 +433,16 @@ label {
 
 
 .article-box {
-	
+
 	@include clearfix();
 	@include box-shadow(0 0 10px rgba(0,0,0,.25));
-	
+
 	margin: 50px auto !important;
 	padding: 50px !important;
 	background: #fff;
 
 	footer {
-		margin-top: 50px;		
+		margin-top: 50px;
 	}
 
 	p {
@@ -514,7 +514,7 @@ label {
 			display:inline-block;
 			padding: 0;
 			border: 0;
-			
+
 			max-width: 100%;
 			z-index: 5;
 
@@ -530,7 +530,7 @@ label {
 	}
 
 	&:hover {
-		
+
 		img {
 			opacity: 1;
 			transform: scale(1.2);
@@ -616,7 +616,7 @@ label {
 		// margin-right: 10px;
 	}
 
-	&:hover {	
+	&:hover {
 		border-color: $color-om-blue-1;
 		background: $color-om-blue-1;
 
@@ -637,7 +637,7 @@ label {
 
 
 header .container {
-	
+
 }
 
 
@@ -743,7 +743,7 @@ header .container {
 		-webkit-backface-visibility: hidden;
 		-webkit-font-smoothing:antialiased;
 		outline: 1px solid transparent;
-		
+
 		-webkit-transition: 0.5s all;
 		@include filter(grayscale(100%));
 
@@ -779,17 +779,17 @@ header .container {
 @media only screen and (max-width: $media-breakpoint-4) {
 
 	.speaker {
-		width: 50%;	
+		width: 50%;
 	}
-	
+
 }
 @media only screen and (max-width: $media-breakpoint-2) {
 
 	.speaker {
-		width: 100%;	
+		width: 100%;
 		height: auto;
 	}
-	
+
 }
 
 /* 	==================================
@@ -816,7 +816,7 @@ header .container {
 			-webkit-backface-visibility: hidden;
 			-webkit-font-smoothing:antialiased;
 			outline: 1px solid transparent;
-			
+
 			-webkit-transition: 0.5s all;
 			// @include filter(grayscale(100%));
 
@@ -828,7 +828,7 @@ header .container {
 
 	}
 
-	
+
 
 /* 	==================================
  	Form Validation
@@ -887,7 +887,7 @@ header .container {
 	}
 
 	.sf-menu.visible {
-		
+
 	}
 
 }
@@ -902,7 +902,7 @@ header .container {
 
 
 @media only screen and (min-width: $media-breakpoint-4) {
-	
+
 	.thumbnail-box {
 		@include span (3 of 9);
 		.thumbnail-box-text {
