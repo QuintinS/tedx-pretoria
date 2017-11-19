@@ -1113,41 +1113,37 @@
 
 						<div class="content-box">
 
-							<form id="contact-form" action="/scripts/contact.asp">
+							<form id="contact-form" action="https://submit.myjotform.com/submit/73227408204551/" method="post" name="form_73227408204551" id="73227408204551" accept-charset="utf-8">
+
+								<input type="hidden" name="formID" value="73227408204551" />
 
 								<div class="input-group">
 									<label for="contactName">Name</label>
-									<input type="text" name="contactName" id="contactName" placeholder="Enter your name.">
-									<span class="validation-message error">This is not a valid name.</span>
-									<span class="validation-message empty">This field is required.</span>
+									<input type="text" id="input_3" name="q3_name" data-type="input-textbox" class="form-textbox" data-component="textbox" placeholder="Enter your name." />
 								</div>
 
 								<div class="input-group">
 									<label for="contactEmail">E-mail Address</label>
-									<input type="text" name="contactEmail" id="contactEmail" placeholder="e.g. yourname@yourdomain.com">
-									<span class="validation-message error">This is not a valid email address.</span>
-									<span class="validation-message empty">This field is required.</span>
+									<input type="email" id="input_5" name="q5_email5" class="form-textbox validate[Email]" value="" data-component="email"  placeholder="e.g. yourname@yourdomain.com" />
 								</div>
 
 								<div class="input-group">
 									<label for="contactTelephone">Phone</label>
-									<input type="text" name="contactTelephone" id="contactTelephone" placeholder="+27 72 000 0000">
-									<span class="validation-message error">This is not a valid phone number.</span>
-									<span class="validation-message empty">This field is required.</span>
+									<input type="text" id="input_8" name="q8_phoneNumber" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="+27 72 000 0000" />
 								</div>
 
 								<div class="input-group">
 									<label for="contactMessage">Message</label>
-									<textarea rows="10" name="contactMessage" id="contactMessage" placeholder="Enter your message here."></textarea>
-									<span class="validation-message error">The message is too short.</span>
-									<span class="validation-message empty">This field is required.</span>
+									<textarea id="input_7" class="form-textarea" name="q7_message" cols="40" rows="6" data-component="textarea" placeholder="Enter your message here."></textarea>
 								</div>
 
 								<hr>
 
 								<div class="text-align-right">
 									<button type="reset" class="button button-large hollow primary">Clear</button>
-									<button type="submit" class="button button-large primary">Submit</button>
+									<button id="input_2" type="submit" class="button button-large primary form-submit-button" data-component="button">
+			              Submit
+			            </button>
 								</div>
 
 								<div class="success">Thank you for your message! <br> We will be in touch soon.</div>

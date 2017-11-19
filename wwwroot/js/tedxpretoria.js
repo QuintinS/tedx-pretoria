@@ -49,38 +49,8 @@ var TEDx = {
 						contactMessage: {
 							required: "Please enter your message.",
 						},
-					},
-					submitHandler: function(form){
-
-						var myData = {
-							contactName: $("#contactName").val(),
-							contactEmail: $("#contactEmail").val(),
-							contactTelephone: $("#contactTelephone").val(),
-							contactMessage: $("#contactMessage").val()
-						};
-
-						$.ajax({
-							// url: "/json/generic-success.json",
-							url: "/scripts/Contact.asp",
-							method: "POST",
-							data: myData,
-							success: function(data){
-								if (data.ResponseStatus === "success") {
-									$("#contact-form .success").fadeIn(500, function(){
-										$(this).delay(5000).fadeOut(500);
-									});
-								}
-								else
-								{
-									console.log("Could not send e-mail.");
-								}
-							},
-							error: function(){
-								console.log("Could not send e-mail.");
-							}
-						});
-
 					}
+
 				});
 
 			}
@@ -109,7 +79,7 @@ var TEDx = {
 		scrollTo: function(HashOrEvent){
 
 			if (typeof HashOrEvent === "string") {
-				
+
 			}
 			else
 			if (typeof HashOrEvent === "object") {
