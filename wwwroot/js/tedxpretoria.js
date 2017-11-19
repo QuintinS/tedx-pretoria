@@ -21,32 +21,32 @@ var TEDx = {
 
 				$("#contact-form").validate({
 					rules: {
-						contactName: {
+						q3_name: {
 							required: true,
 						},
-						contactEmail: {
+						q5_email5: {
 							required: true,
 							email: true
 						},
-						contactTelephone: {
+						q8_phoneNumber: {
 							required: true,
 						},
-						contactMessage: {
+						q7_message: {
 							required: true,
 						},
 					},
 					messages: {
-						contactName: {
+						q3_name: {
 							required: "Please enter your name",
 						},
-						contactEmail: {
+						q5_email5: {
 							required: "Please enter your e-mail address.",
 							email: "Please enter a valid e-mail address."
 						},
-						contactTelephone: {
+						q8_phoneNumber: {
 							required: "Please enter your telephone number.",
 						},
-						contactMessage: {
+						q7_message: {
 							required: "Please enter your message.",
 						},
 					}
