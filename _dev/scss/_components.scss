@@ -671,7 +671,6 @@ header .container {
 		display:block;
 		text-align:center;
 		max-width: 350px;
-		max-height: 350px;
 		min-height:150px;
 		margin: auto;
 		position:relative;
@@ -681,7 +680,6 @@ header .container {
 			box-shadow: none;
 			border:0;
 			width: 350px;
-			margin: 20px;
 		}
 	}
 	.sponsor-title {
@@ -693,12 +691,56 @@ header .container {
 	.sponsor-name {
 		display:block;
 		text-align:center;
+		margin-top: 1em;
 		font-size: 30px;
 		font-weight: bold;
 		color: $template-color-1;
 	}
 }
 
+
+.notads {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+a.notanad {
+
+	display: inline-block;
+	border: none;
+	margin: 0 20px;
+	max-width: 180px;
+
+	> img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		width: auto;
+		border: 0;
+		box-shadow: none;
+	}
+
+}
+
+
+.sponsor-logo {
+max-width: 180px !important;
+}
+
+.sponsor.lead {
+	.sponsor-logo-container {
+		margin: 0;
+		text-align: center;
+		max-width: none !important;
+		width: 100% !important;
+	}
+	.sponsor-logo {
+		width: auto !important;
+		max-width: 600px !important;
+	}
+}
 
 /* 	==================================
  	Speakers
