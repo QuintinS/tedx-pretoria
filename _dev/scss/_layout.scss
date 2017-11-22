@@ -16,7 +16,13 @@ footer {
 }
 
 
-
+.programme-preview {
+	max-width: 500px;
+	margin: auto;
+	img {
+		width: 100%;
+	}
+}
 
 
 
@@ -100,7 +106,7 @@ body > footer {
 }
 
 body {
-	
+
 }
 
 
@@ -128,13 +134,13 @@ body > .content {
 
 @media only screen and (max-width: $media-breakpoint-3 - 1) {
 
-	
+
 
 
 	header > .container {
 		// text-align: center;
 	}
-	
+
 }
 
 @media only screen and (min-width: $media-breakpoint-3) {
@@ -166,7 +172,7 @@ body > .content {
 
 @media only screen and (max-width: $media-breakpoint-4) {
 
-	
+
 
 }
 
@@ -186,7 +192,7 @@ body > .content {
 				width: $media-breakpoint-4 - 50;
 			}
 		}
-		
+
 	}
 
 	.columns-1 {
@@ -204,7 +210,7 @@ body > .content {
 	}
 
 	.columns-3 {
-		@include span (4 of 12);			
+		@include span (4 of 12);
 		&:last-of-type {
 			@include span (4 of 12 last);
 		}
@@ -214,7 +220,7 @@ body > .content {
 	}
 
 	.columns-4 {
-		@include span (3 of 12);			
+		@include span (3 of 12);
 		&:last-of-type {
 			@include span (3 of 12 last);
 		}
@@ -224,7 +230,7 @@ body > .content {
 	}
 
 	.columns-6 {
-		@include span (2 of 12);			
+		@include span (2 of 12);
 		&:last-of-type {
 			@include span (2 of 12 last);
 		}
@@ -253,11 +259,7 @@ body > .content {
 				width: $media-breakpoint-5 - 100;
 			}
 		}
-		
+
 	}
 
 }
-
-
-
-
