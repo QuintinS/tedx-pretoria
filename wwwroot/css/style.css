@@ -6060,6 +6060,15 @@ a.notanad>img{
         float:right;
         margin-right:0
     }
+
+	.sf-menu{
+		font-size: 14px; /*  new code */
+	}
+
+	.sf-menu li a{
+		font-size:14px;
+	}
+
 }
 .sf-menu{
     margin:0;
@@ -6068,7 +6077,7 @@ a.notanad>img{
 }
 .sf-menu li a{
     float:left;
-    padding:15px; /* changed this padding:20px >>> padding:15px */
+    padding:20px; /* changed this padding:20px >>> padding:15px */
     color:#999;
     font-weight:bold
 }
@@ -6192,11 +6201,13 @@ body>.content{
 }
 @media only screen and (min-width: 1060px){
     body>.content{
-        padding-top:200px !important
+        padding-top:200px !important;
+		font-size: 14px;
     }
     body>header article,body>header .container,body>footer article,body>footer .container,body>.content section article,body>.content section .container{
         width:1010px
     }
+
     .columns-1{
         width:100%;
         float:right;
