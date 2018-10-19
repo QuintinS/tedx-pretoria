@@ -4673,7 +4673,7 @@ html ::selection{
 }
 body{
     font-family:"Lato", "Helvetica", "Arial", sans-serif;
-    font-size:18px;
+    font-size:17px;
     line-height:1.6rem;
     background:#fff
 }
@@ -6062,7 +6062,7 @@ a.notanad>img{
     }
 
 	.sf-menu{
-		font-size: 14px; /*  new code */
+		font-size:14px; /*  new code */
 	}
 
 	.sf-menu li a{
