@@ -4885,6 +4885,9 @@ table thead tr{
         margin-top:2em;
         margin-bottom:1em
     }
+    #mediaShrinkNav {
+        height: 100%;
+    }
 }
 @media only screen and (max-width: 1059px){
     img{
@@ -6126,6 +6129,8 @@ header>article,header .container,.content section>article,.content section .cont
         padding:0
     }
 }
+
+/* HEADER */
 header article,header .container,footer article,footer .container{
     padding:0
 }
@@ -6142,6 +6147,11 @@ header #header-logo-link{
     display:inline-block;
     padding-top:10px;
     width:350px
+}
+
+header .shrinkNav {
+    height: 130px;
+    transition: 0.35s;
 }
 header #header-logo-link img{
     width:100%
