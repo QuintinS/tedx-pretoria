@@ -6169,6 +6169,7 @@ header #header-logo-link img{
 
 #banner-button:hover {
     background-color: rgba(229,27,35,0.7);
+    border: 2px solid #e51b23;
 }
 
 /* BANNER MEDIA QUERIES */
