@@ -6211,7 +6211,7 @@ header #header-logo-link img{
 
 @media only screen and (max-width: 640px) {
     #banner-button {
-        bottom: 68%;
+        display: none;
     }
 }
 
