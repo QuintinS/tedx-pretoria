@@ -15,11 +15,14 @@
 	<script src="js/superfish.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script>
+
 		//Delay banner button for aesthetics
-		setTimeout(function() {
-			$('#banner-button').css('display', 'inline-block');
-		}, 4000);
-		
+		if($(window).width() > 680) {
+			setTimeout(function() {
+				$('#banner-button').css('display', 'inline-block');
+			}, 7000);
+		}
+
 	</script>
 
 </head>
