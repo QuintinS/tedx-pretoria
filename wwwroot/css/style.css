@@ -6159,11 +6159,12 @@ header #header-logo-link img{
 
 /* BANNER */
 #banner-button {
+    display: none;
     border: 2px solid white;
     color: white;
     background-color: transparent;
     position: absolute;
-    bottom: 32%;
+    bottom: 26%;
     left: 44%;
 }
 
@@ -6173,53 +6174,32 @@ header #header-logo-link img{
 }
 
 /* BANNER MEDIA QUERIES */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1330px) {
     #banner-button {
-        bottom: 38%;
-    }
-}
-
-@media only screen and (max-width: 1230px) {
-    #banner-button {
-        bottom: 45%;
-        left: 43%;
+        bottom: 35%;
     }
 }
 
 @media only screen and (max-width: 1060px) {
     #banner-button {
-        bottom: 55%;
-        left: 41%;
+        bottom: 52%;
+        left: 42%;
     }
 }
 
-@media only screen and (max-width: 950px) {
-    #banner-button {
-        bottom: 60%
-    }
-}
-
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 850px) {
     #banner-button {
         padding-top: 5px;
         padding-bottom: 5px;
-        border: 1px solid white;
         font-weight: normal;
-        bottom: 65%;
-        left: 38%;
+        bottom: 59%;
+        left: 40%;
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
     #banner-button {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    #banner-button {
-        bottom: 72%;
-        left: 35%;
     }
 }
 
