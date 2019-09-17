@@ -14,16 +14,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/superfish.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
-	<script>
-
-		//Delay banner button for aesthetics
-		if($(window).width() > 680) {
-			setTimeout(function() {
-				$('#banner-button').css('display', 'inline-block');
-			}, 7000);
-		}
-
-	</script>
 
 </head>
 <body>
@@ -79,6 +69,34 @@
 			</div>
 
 		</section>
+
+		<!-- NEWSLETTER MODAL ====== LELLO ====== -->
+		<div id="newsletter-modal">
+
+			<div id="modal-content">
+				<span class="close">&times;</span>
+				<form action="//tedxpretoria.us7.list-manage.com/subscribe/post?u=732c9ddee42cc5eb65cd30fb1&amp;id=b39112bde6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<h2>Tedx Pretoria Newsletter!</h2>
+					<p>Subscribe to our Newsletter to get TedxPretoria updates to your mailbox!</p>
+					<div class="mc-field-group input-group">
+						<input type="text" value="" name="FNAME" class="required modal-input" id="mce-FNAME" placeholder="First Name *">
+					</div>
+					<div class="mc-field-group input-group">
+						<input type="email" value="" name="EMAIL" class="required email modal-input" id="mce-EMAIL" placeholder="E-mail Address *">
+					</div>
+
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>
+					<button id="input_2" type="submit" class="button button-large primary form-submit-button" data-component="button">
+						Subscribe!
+					</button>
+				</form>
+			</div>
+			
+
+		</div>
 
 		<section class="red parallax">
 		<!-- <a href="https://www.quicket.co.za/events/82667-tedxpretoria-2019?preview=t#/" id="banner-button" class="button button-large hollow primary">Get your Ticket</a> -->	
@@ -1728,6 +1746,30 @@
 	<script src="js/template.js"></script>
 	<script src="js/tedxpretoria.js"></script>
 	<script src="js/navShrink.js"></script>
+	
+	<script>
+
+			//Newsletter Modal functionality
+	
+			var modal = document.querySelector('#newsletter-modal');
+			var modalContent = document.querySelector('#modal-content');
+			var close = document.querySelector('.close');
+
+			setTimeout(function() {
+	
+				modal.style.visibility = 'visible';
+				modal.classList.add('modal-show');
+	
+			}, 15000);
+
+			close.onclick = function() {
+				modalContent.style.visibility = 'hidden';
+				modal.style.visibility = 'hidden';
+			}
+	
+			
+	
+		</script>
 
 
 </body>
