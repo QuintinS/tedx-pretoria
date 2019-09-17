@@ -82,6 +82,9 @@
 						<input type="text" value="" name="FNAME" class="required modal-input" id="mce-FNAME" placeholder="First Name *">
 					</div>
 					<div class="mc-field-group input-group">
+						<input type="text" value="" name="LNAME" class="required modal-input" id="mce-LNAME" placeholder="Last Name *">
+					</div>
+					<div class="mc-field-group input-group">
 						<input type="email" value="" name="EMAIL" class="required email modal-input" id="mce-EMAIL" placeholder="E-mail Address *">
 					</div>
 
@@ -1754,6 +1757,7 @@
 			var modal = document.querySelector('#newsletter-modal');
 			var modalContent = document.querySelector('#modal-content');
 			var close = document.querySelector('.close');
+			var modalSubscribe = document.querySelector('#input_2');
 
 			setTimeout(function() {
 	
@@ -1763,8 +1767,20 @@
 			}, 15000);
 
 			close.onclick = function() {
-				modalContent.style.visibility = 'hidden';
 				modal.style.visibility = 'hidden';
+				modal.classList.remove('modal-show');
+			}
+
+			modalSubscribe.onclick = function() {
+				modal.style.visibility = 'hidden';
+				modal.classList.remove('modal-show');
+			}
+
+			window.onclick = function(event) {
+				if(event.target == modal) {
+					modal.style.visibility = 'hidden';
+					modal.classList.remove('modal-show');
+				}
 			}
 	
 			
