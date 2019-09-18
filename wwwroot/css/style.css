@@ -5045,6 +5045,7 @@ table thead tr{
     padding: 25px 30px 30px 30px;
     background-color: white;
     border-radius: 2px;
+    box-shadow: 7px 6px 12px 1px #000;
 
     /* Modal Content animation */
     -webkit-transform: translateX(20%);
@@ -5097,6 +5098,18 @@ table thead tr{
     font-weight: 400;
 }
 
+#modal-content .first-name {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+}
+
+#modal-content .last-name {
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+}
+
 #modal-content .close {
     float: right;
     font-size: 20px;
@@ -5104,6 +5117,18 @@ table thead tr{
 
 #modal-content .close:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+    #modal-content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #modal-content {
+        width: 90%;
+    }
 }
 /*==================================================*/
 
