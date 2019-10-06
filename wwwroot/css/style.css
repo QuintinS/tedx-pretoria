@@ -5129,8 +5129,28 @@ table thead tr{
     #modal-content {
         width: 90%;
     }
+
+    #faqSection h5 {
+        font-size: 1.2rem;
+    }
+
+    #faqSection p {
+        font-size: 0.9rem;
+    }
 }
 /*==================================================*/
+
+/* FAQ Template */
+
+#faqSection h5{
+    color: #e51b23;
+    text-transform: none;
+    font-weight: 700;
+}
+
+
+
+/*=================================================*/
 
 .red .article-box{
     color:#222
