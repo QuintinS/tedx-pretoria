@@ -5977,7 +5977,10 @@ a .button[disabled]:hover{
     display:block;
     border:1px solid #e7e7e7;
     padding:30px;
-    margin-bottom:20px
+    margin-bottom:20px;
+}
+.sponsor a {
+    border-bottom: none;
 }
 .sponsor .sponsor-logo-container{
     display:block;
@@ -6057,7 +6060,6 @@ a.notanad>img{
     padding:0 15px
 }
 .speaker .speaker-portrait-container{
-    z-index: 10;
     border-radius: 1000px;
     -webkit-border-radius:1000px;
     position:relative;
