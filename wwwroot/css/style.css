@@ -5986,7 +5986,7 @@ a .button[disabled]:hover{
     display:block;
     text-align:center;
     max-width:350px;
-    min-height:150px;
+    min-height:190px;
     margin:auto;
     position:relative
 }
